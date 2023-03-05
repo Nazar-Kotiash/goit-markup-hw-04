@@ -104,7 +104,15 @@ body{
 }
 
 .caption{
-    background:#2E2F42;
+    width: max-content;
+    margin: 0 auto;
+    background-image: 
+    linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), 
+    url(../images_1/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     padding: 188px 0;
     text-align: center;
 }
@@ -139,14 +147,29 @@ body{
 .hero{
     padding-top: var(--padding_button);
     padding-bottom: var(--padding_button);
-
 }
+
 .hero_list{
     display: flex;
     column-gap: 24px;
 }
 .hero_list_item{
     width: calc((100% - 72px)/4);
+}
+.hero_list_item_icon{
+    width: 264px;
+    height: 112px;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+.hero_list_item_icon_svg{
+    width: 64px;
+    height: 64px;
 }
 .hero_list_item_title{
     font-weight: 500;
@@ -162,12 +185,35 @@ body{
     letter-spacing: 0.02em;
     max-width: 264px;
 }
+.box_list_social{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 8px;
+}
+.box_list_social_item{
+    width: 40px;
+    height: 40px;
+}
+.box_list_social_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+}
+.box_list_social_link:hover, 
+.box_list_social_link:focus{
+    background-color: #404BBF;
+}
 .content{
     padding-bottom: var(--padding_button);
 }
 .content_title_list{
-        display: flex;
-        column-gap: 24px;
+    display: flex;
+    column-gap: 24px;
 }
 .content_title_list_item{
     width: calc((100% - 48px)/3);
@@ -195,6 +241,7 @@ body{
     text-align: center;
     width: calc((100% - 72px)/4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .box_list_item_title{
     font-weight: 500;
@@ -212,6 +259,26 @@ body{
 .box_list_item_title-text{
     padding: 32px 16px;
 
+}
+.logo_list{
+    display: flex;
+    gap: 24px;
+}
+.logo_list_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc((100% - 120px)/6);
+    height: 88px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
+.logo_list_item_border_svg{
+
+}
+.customers{
+    padding-top: 130px;
+    padding-bottom: 120px;
 }
 .footer{
     background: #2E2F42;
@@ -237,6 +304,39 @@ body{
     max-width: 264px;
     margin-top: 16px;
 }
+.footer_container{
+    display: flex;
+}
+.box_list_social_footer{
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+.social_media_link{
+    margin-left: 120px;
+}
+.social_media_link_title{
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.box_list_social_item_footer{
+    width: 40px;
+    height: 40px;
+}
+
+.box_list_social_link_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
 .btn_list{
     display: flex;
     column-gap: 24px;
@@ -260,6 +360,7 @@ body{
     background: #404BBF;
     color: #fff;
     border-color:transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .section{
     padding-bottom: var(--padding_button);
@@ -279,6 +380,16 @@ body{
 }
 .section_items {
     width: calc((100% - 48px)/3);
+}
+.section_items:hover,
+.section_items:focus{
+    border: 1px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.section_items:hover a div{
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
 }
 .section_items_title{
     font-weight: 500;
