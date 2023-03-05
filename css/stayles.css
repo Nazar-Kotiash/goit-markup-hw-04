@@ -271,19 +271,20 @@ body{
     align-items: center;
     width: calc((100% - 120px)/6);
     height: 88px;
-    border: 1px solid #8E8F99;
-    border-radius: 4px;
-    fill: #8E8F99;
 }
 .logo-list-item-link{
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    fill: #8E8F99;
+    
 }
-.logo_list_item:hover,
-.logo_list_item:focus{
+.logo-list-item-link:hover,
+.logo-list-item-link:focus{
     border-color: #404BBF;
     border-radius: 4px;
     fill: #404BBF;
